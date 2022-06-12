@@ -1,0 +1,8 @@
+FROM machacamoya/ansible-playbook:latest
+
+MAINTAINER machacamoya <machacamoya@yahoo.es>
+
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]
